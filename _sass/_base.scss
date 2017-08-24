@@ -3,6 +3,41 @@
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
 body {
-  background: red;
-  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  background: #EEE;
+  padding-top: 100px;
+}
+
+header {
+  position: fixed;
+  background: #EEE;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+
+  img {
+  	width: 60px;
+  	margin: auto;
+  	border-radius: 6px;
+  	display: block;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+	li {
+	  width: 100%;
+	  padding: 20px;
+
+		iframe {
+		  width: 100%;
+		  max-width: 600px;
+		  margin: auto;
+		  display: block;
+		}
+	}
 }

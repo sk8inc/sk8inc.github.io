@@ -2,4 +2,16 @@
 layout: ytho
 ---
 
-<h1>Landing Page</h1>
+<header>
+	<a href="/" title="Return to the top" id="logo">
+  	<img src="assets/images/411icon.png" alt="411songs"/>
+	</a>
+</header>
+
+<ul class="issues">
+{% for video in site.data.videos %}
+	<li class="issue">
+		<iframe allowtransparency="<%= true %>" frameborder="0" height="300" src="{{ video.playlist }}"></iframe>
+	</li>
+{% endfor %}
+</ul>
